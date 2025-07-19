@@ -1,0 +1,130 @@
+.products {
+  margin-top: 176px;
+  text-align: center;
+  p {
+    font-family: "Yellowtail", cursive;
+    color: $bg-sy;
+    font-size: 36px;
+  }
+  h1 {
+    font-size: 50px;
+    color: $bg-py;
+  }
+  .product__wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .product__card {
+      width: 335px;
+      height: 483px;
+      border-radius: 30px;
+      background-color: #f9f8f8;
+      .item__img {
+        height: 324px;
+        position: relative;
+        img {
+          margin-top: 55px;
+          border-radius: 50%;
+        }
+        a {
+          top: 0;
+          left: 0;
+          margin: 40px 17px;
+          font-weight: 600;
+          font-size: 15px;
+          color: #fff;
+          padding: 10px 21px;
+          background-color: $bg-py;
+          border-radius: 8px;
+          position: absolute;
+        }
+      }
+      .card__body {
+        margin: 25px;
+        h5 {
+          font-weight: 600;
+          font-size: 20px;
+          color: $bg-py;
+          text-align: left;
+          margin-top: 70px;
+        }
+        hr {
+          color: #ddd;
+          margin-top: 10px;
+        }
+        .price {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+
+          h6 {
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            color: $bg-py;
+
+            span {
+              font-weight: 600;
+              font-size: 15px;
+              color: #b8b8b8;
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
+  button {
+    @include btn($bg-py, white);
+  }
+}
+
+@media (max-width: 999px) {
+  .products {
+    overflow-x: hidden;
+
+    .product__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product__card {
+      width: 100%;
+      max-width: 335px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .products {
+    overflow-x: hidden;
+
+    .product__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product__card {
+      width: 100%;
+      max-width: 335px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .products {
+    width: 100%;
+    overflow-x: hidden;
+
+    .product__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product__card {
+      width: 100%;
+      max-width: 335px;
+      margin: 0 auto;
+    }
+  }
+}

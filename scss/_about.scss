@@ -1,0 +1,102 @@
+.about {
+  height: 900px;
+  margin-top: 190px;
+  background-color: #f9f8f8;
+  .about__wrapper {
+    display: flex;
+    .about__img {
+      width: 1200px;
+      height: 900px;
+      .about__body {
+        width: 702px;
+        height: 682px;
+        margin-top: 150px;
+      }
+    }
+    .about__body {
+      margin-top: 100px;
+      h5 {
+        font-weight: 100;
+        font-family: "Yellowtail", cursive;
+        color: $bg-sy;
+        font-size: 36px;
+      }
+      h1 {
+        color: $bg-py;
+        font-weight: 800;
+        font-size: 50px;
+      }
+      p {
+        padding-top: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 165%;
+        color: #525c60;
+      }
+      button {
+        @include btn($bg-py, white);
+        margin-top: 46px;
+      }
+    }
+    .about__shop {
+      margin-top: 48px;
+
+      .organic {
+        display: flex;
+        gap: 19px;
+
+        img {
+          width: 53px;
+          height: 46px;
+          border-radius: 20px;
+        }
+
+        .organic_body {
+          font-size: 25px;
+
+          h4 {
+            color: #274c5b;
+          }
+        }
+      }
+
+      .quality {
+        display: flex;
+        gap: 19px;
+        margin-top: 30px;
+
+        img {
+          width: 53px;
+          height: 46px;
+          border-radius: 20px;
+        }
+        .quality_body {
+          font-size: 25px;
+
+          h4 {
+            color: #274c5b;
+          }
+        }
+      }
+    }
+  }
+}
+.img1 {
+  background-color: white;
+  width: 101px;
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.img2 {
+  background-color: white;
+  width: 101px;
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
